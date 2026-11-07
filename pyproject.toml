@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "msreliability"
+version = "0.0.1.dev0"
+description = "Exact reliability of multistate flow networks: the full s-t max-flow distribution in one decomposition"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Johannes Gast" }]
+requires-python = ">=3.10"
+dependencies = ["networkx>=3.2"]
+keywords = ["reliability", "multistate flow network", "max flow", "state-space decomposition"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Development Status :: 2 - Pre-Alpha",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Repository = "https://github.com/jg-codes/msreliability"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/msreliability"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

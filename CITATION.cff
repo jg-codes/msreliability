@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "msreliability: exact reliability of multistate flow networks"
+authors:
+  - family-names: Gast
+    given-names: Johannes
+license: MIT
+repository-code: "https://github.com/jg-codes/msreliability"
+version: 0.0.1.dev0
